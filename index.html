@@ -39,26 +39,11 @@ body{font-family:'Noto Serif JP',serif;background:var(--white);color:var(--text)
 }
 .hero-wc{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
 .hero-content{position:relative;z-index:2;width:100%;max-width:600px;margin:0 auto;}
-
 .hero-tag{font-size:.72rem;letter-spacing:.35em;color:var(--text-light);margin-bottom:14px;animation:fadeUp 1s ease both;}
 .hero-logo{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,9vw,5rem);font-weight:300;letter-spacing:.18em;color:var(--text);line-height:1;margin-bottom:6px;animation:fadeUp 1s .2s ease both;}
 .hero-logo-jp{font-family:'Zen Old Mincho',serif;font-size:1rem;color:var(--text-light);letter-spacing:.45em;margin-bottom:36px;animation:fadeUp 1s .35s ease both;}
-
-/* Bird scene - centered block */
-.bird-scene-wrap{
-  display:block;
-  width:100%;
-  max-width:420px;
-  margin:0 auto 32px;
-  animation:fadeUp 1s .5s ease both;
-}
-.bird-scene-wrap svg{
-  display:block;
-  width:100%;
-  height:auto;
-  filter:drop-shadow(0 4px 18px rgba(100,160,185,.18));
-}
-
+.bird-scene-wrap{display:block;width:100%;max-width:420px;margin:0 auto 32px;animation:fadeUp 1s .5s ease both;}
+.bird-scene-wrap svg{display:block;width:100%;height:auto;filter:drop-shadow(0 4px 18px rgba(100,160,185,.18));}
 .hero-copy{font-size:clamp(.82rem,2vw,.92rem);color:var(--text-light);line-height:2.6;letter-spacing:.07em;animation:fadeUp 1s .7s ease both;}
 .hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--sky);font-size:.6rem;letter-spacing:.25em;animation:fadeIn 1.5s 1.2s both;}
 .hero-scroll::after{content:'';width:1px;height:36px;background:linear-gradient(to bottom,var(--sky),transparent);animation:scrollLine 1.8s ease-in-out infinite;}
@@ -67,172 +52,6 @@ body{font-family:'Noto Serif JP',serif;background:var(--white);color:var(--text)
 .section-label{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.42em;color:var(--sage);text-transform:uppercase;margin-bottom:10px;}
 .section-title{font-family:'Zen Old Mincho',serif;font-size:clamp(1.2rem,3.5vw,1.6rem);font-weight:400;line-height:1.9;color:var(--text);margin-bottom:36px;}
 .section-line{width:48px;height:1px;background:linear-gradient(to right,var(--sage),var(--sky));margin:0 auto;}
-.leaf-deco{position:absolute;pointer-events:none;}
-
-/* ── EVENT (NEW TRIAL) ── */
-.event-section{
-  padding:90px 24px;
-  background:linear-gradient(160deg,#e8f4f8 0%,#f0f8ef 100%);
-  text-align:center;position:relative;overflow:hidden;
-}
-.event-badge{
-  display:inline-block;
-  background:linear-gradient(135deg,#e8f6e8,#d8eef8);
-  border:1.5px solid var(--sage-light);
-  color:var(--sage);
-  font-size:.68rem;letter-spacing:.25em;
-  padding:5px 18px;border-radius:20px;
-  margin-bottom:20px;
-}
-.event-title{
-  font-family:'Zen Old Mincho',serif;
-  font-size:clamp(1.3rem,4vw,1.9rem);
-  font-weight:700;line-height:1.7;
-  color:var(--text);margin-bottom:10px;
-}
-.event-subtitle{font-size:.82rem;color:var(--text-light);letter-spacing:.06em;margin-bottom:36px;line-height:2;}
-.event-lead{
-  max-width:540px;margin:0 auto 40px;
-  font-size:.86rem;line-height:2.6;color:var(--text-light);
-  background:rgba(255,255,255,.72);backdrop-filter:blur(6px);
-  border-radius:20px;padding:28px 32px;
-  border:1px solid rgba(255,255,255,.9);
-  text-align:left;
-}
-.event-lead strong{color:var(--text);}
-
-.event-fit{max-width:560px;margin:0 auto 40px;text-align:left;}
-.event-fit h3{font-family:'Zen Old Mincho',serif;font-size:.95rem;color:var(--text);margin-bottom:16px;text-align:center;}
-.event-fit ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.event-fit li{
-  background:rgba(255,255,255,.75);border-radius:12px;
-  padding:12px 18px;font-size:.8rem;line-height:1.8;
-  color:var(--text-light);border:1px solid rgba(255,255,255,.9);
-}
-
-.event-features{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:16px;max-width:620px;margin:0 auto 40px;
-}
-.event-feat{
-  background:rgba(255,255,255,.72);border-radius:18px;
-  padding:24px 20px;border:1px solid rgba(255,255,255,.9);
-  text-align:left;
-}
-.event-feat .ehead{font-family:'Zen Old Mincho',serif;font-size:.88rem;font-weight:700;color:var(--text);margin-bottom:8px;}
-.event-feat p{font-size:.76rem;line-height:2;color:var(--text-light);}
-
-.event-monitor{
-  max-width:540px;margin:0 auto 36px;
-  background:rgba(255,255,255,.72);border-radius:20px;
-  padding:24px 28px;border:1px solid var(--sage-light);
-  text-align:left;
-}
-.event-monitor h3{font-family:'Zen Old Mincho',serif;font-size:.92rem;color:var(--text);margin-bottom:14px;}
-.event-monitor ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
-.event-monitor li{font-size:.78rem;color:var(--text-light);line-height:1.9;padding-left:14px;position:relative;}
-.event-monitor li::before{content:'✓';position:absolute;left:0;color:var(--sage);}
-
-.event-table{
-  max-width:540px;margin:0 auto 36px;
-  background:rgba(255,255,255,.8);border-radius:20px;
-  overflow:hidden;border:1px solid var(--beige);
-}
-.event-table table{width:100%;border-collapse:collapse;}
-.event-table th,.event-table td{padding:13px 20px;font-size:.8rem;text-align:left;border-bottom:1px solid var(--beige);}
-.event-table th{background:var(--sage-pale);color:var(--text);font-weight:400;letter-spacing:.06em;width:90px;}
-.event-table td{color:var(--text-light);line-height:1.8;}
-.event-table tr:last-child th,.event-table tr:last-child td{border-bottom:none;}
-.price-highlight{color:var(--sage);font-weight:700;}
-
-.event-dates{max-width:500px;margin:0 auto 36px;}
-.event-dates h3{font-family:'Zen Old Mincho',serif;font-size:.92rem;color:var(--text);margin-bottom:16px;}
-.date-list{display:flex;flex-direction:column;gap:8px;}
-.date-item{
-  background:rgba(255,255,255,.75);border-radius:12px;
-  padding:11px 20px;font-size:.82rem;color:var(--text-light);
-  border:1px solid rgba(255,255,255,.9);
-  display:flex;align-items:center;gap:10px;
-}
-.date-item .di{color:var(--sage);font-size:.7rem;letter-spacing:.06em;}
-
-.event-note{max-width:520px;margin:0 auto 36px;font-size:.74rem;color:var(--text-light);line-height:2.2;text-align:left;padding:0 8px;}
-
-.event-cta{
-  max-width:480px;margin:0 auto;
-  background:linear-gradient(135deg,var(--sage-pale),var(--sky-pale));
-  border-radius:20px;padding:28px;
-  border:1px solid var(--sage-light);
-}
-.event-cta p{font-size:.82rem;color:var(--text-light);line-height:2.2;margin-bottom:18px;}
-.event-cta .line-link{
-  display:inline-flex;align-items:center;gap:8px;
-  background:linear-gradient(135deg,#06c755,#04a845);
-  color:white;padding:14px 32px;border-radius:50px;
-  font-size:.84rem;letter-spacing:.08em;text-decoration:none;
-  box-shadow:0 6px 20px rgba(6,199,85,.3);
-  transition:all .3s;
-}
-.event-cta .line-link:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(6,199,85,.4);}
-.event-cta .poem{font-size:.73rem;color:var(--text-light);margin-top:18px;font-style:italic;line-height:2;}
-
-/* ── FEATURED MENU ── */
-.featured-section{
-  padding:90px 24px;
-  background:linear-gradient(160deg,var(--gold-pale) 0%,#fdfcfa 100%);
-  text-align:center;position:relative;overflow:hidden;
-}
-.featured-badge{
-  display:inline-block;
-  background:linear-gradient(135deg,var(--gold-pale),#fde8b0);
-  border:1.5px solid var(--gold-light);color:var(--gold);
-  font-size:.68rem;letter-spacing:.25em;
-  padding:5px 18px;border-radius:20px;margin-bottom:16px;
-}
-.featured-inner{max-width:760px;margin:0 auto;}
-
-.featured-card{
-  position:relative;
-  background:rgba(255,255,255,.95);
-  border:2px solid var(--gold-light);
-  border-radius:24px;
-  padding:40px 36px 32px;
-  margin-bottom:20px;
-  box-shadow:0 8px 32px rgba(200,160,96,.12);
-  transition:transform .3s,box-shadow .3s;
-  overflow:hidden;
-}
-.featured-card::before{
-  content:'';position:absolute;
-  top:0;left:0;right:0;height:4px;
-  background:linear-gradient(to right,var(--gold),var(--sage),var(--sky));
-}
-.featured-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(200,160,96,.2);}
-.featured-card .ribbon{
-  position:absolute;top:18px;right:18px;
-  background:linear-gradient(135deg,var(--gold),#e8b870);
-  color:white;font-size:.62rem;letter-spacing:.12em;
-  padding:4px 14px;border-radius:20px;
-}
-.featured-card-title{
-  font-family:'Zen Old Mincho',serif;
-  font-size:clamp(1.1rem,3vw,1.4rem);
-  font-weight:700;color:var(--text);
-  letter-spacing:.06em;margin-bottom:14px;
-}
-.featured-card-desc{
-  font-size:.84rem;line-height:2.3;
-  color:var(--text-light);margin-bottom:20px;text-align:left;
-}
-.featured-card-desc strong{color:var(--text);}
-.featured-card .prices{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
-.featured-price{
-  background:linear-gradient(135deg,var(--gold-pale),#fde8c0);
-  border:1px solid var(--gold-light);
-  border-radius:10px;padding:10px 20px;
-  font-size:.82rem;color:var(--text);
-}
-.featured-price strong{color:var(--gold);}
 
 /* ── CONCEPT ── */
 .concept{padding:90px 24px;background:var(--white);text-align:center;position:relative;overflow:hidden;}
@@ -243,229 +62,46 @@ body{font-family:'Noto Serif JP',serif;background:var(--white);color:var(--text)
 .concept-bubble:nth-child(2){background:radial-gradient(circle at 38% 33%,#e8eff2,#c0d8e4);}
 .concept-bubble:nth-child(3){background:radial-gradient(circle at 38% 33%,#ede8d8,#d8cdb8);}
 .concept-bubble:nth-child(4){background:radial-gradient(circle at 38% 33%,#e0ecd8,#c4d8bc);}
-.concept-bubble:hover{transform:translateY(-7px) scale(1.04);box-shadow:0 14px 32px rgba(138,170,135,.22);}
-.concept-bubble .bicon{font-size:1.6rem;}
 
-/* ── MENU ── */
-.menu-section{padding:90px 24px;background:linear-gradient(180deg,var(--cream) 0%,var(--white) 100%);position:relative;overflow:hidden;}
-.menu-inner{max-width:780px;margin:0 auto;}
-.menu-divider{display:flex;align-items:center;gap:14px;margin:48px 0 26px;}
-.menu-divider::before,.menu-divider::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--sage-light),transparent);}
-.menu-divider span{font-family:'Cormorant Garamond',serif;font-size:.72rem;letter-spacing:.3em;color:var(--sage);white-space:nowrap;}
-.menu-card{background:rgba(255,255,255,.92);border:1px solid var(--beige);border-radius:18px;padding:28px 28px 24px 34px;margin-bottom:16px;transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden;}
-.menu-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--sage),var(--sky));border-radius:4px 0 0 4px;}
-.menu-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(138,170,135,.15);}
-.menu-card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
-.menu-card-title{font-family:'Zen Old Mincho',serif;font-size:1rem;font-weight:700;color:var(--text);letter-spacing:.04em;}
-.menu-tag{font-size:.62rem;padding:3px 10px;border-radius:20px;letter-spacing:.07em;white-space:nowrap;}
-.tag-both{background:var(--sage-pale);color:#5a8a57;border:1px solid var(--sage-light);}
-.tag-face{background:#fdf0e4;color:#a07050;border:1px solid #e8c8a0;}
-.menu-desc{font-size:.8rem;line-height:2.1;color:var(--text-light);margin-bottom:14px;}
-.menu-prices{display:flex;flex-wrap:wrap;gap:8px;}
-.price-item{background:var(--cream);border-radius:8px;padding:7px 14px;font-size:.76rem;color:var(--text);}
-.price-item strong{color:var(--sage);}
-
-/* Middle / Back labels */
-.stage-label{
-  display:inline-block;
-  font-size:.62rem;letter-spacing:.15em;
-  padding:3px 12px;border-radius:12px;
-  margin-bottom:8px;
-}
-.stage-mid{background:#e8f0e4;color:#5a8058;border:1px solid #b8d0b0;}
-.stage-back{background:#e8e4f4;color:#6058a0;border:1px solid #c0b8e0;}
-
-/* ── FEATURE ── */
-.feature-section{padding:90px 24px;background:linear-gradient(160deg,#e6f0ee 0%,#e2eef5 100%);text-align:center;position:relative;overflow:hidden;}
-.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;max-width:780px;margin:46px auto 0;}
-.feature-item{background:rgba(255,255,255,.72);backdrop-filter:blur(8px);border-radius:22px;padding:34px 22px;border:1px solid rgba(255,255,255,.9);transition:transform .3s;}
-.feature-item:hover{transform:translateY(-5px);}
-.feature-icon{font-size:2.2rem;margin-bottom:14px;display:block;}
-.feature-item h3{font-family:'Zen Old Mincho',serif;font-size:.93rem;margin-bottom:9px;color:var(--text);}
-.feature-item p{font-size:.76rem;line-height:2.1;color:var(--text-light);}
+/* ── FEATURED MENU ── */
+.featured-section{padding:90px 24px;background:linear-gradient(160deg,var(--gold-pale) 0%,#fdfcfa 100%);text-align:center;position:relative;overflow:hidden;}
+.featured-badge{display:inline-block;background:linear-gradient(135deg,var(--gold-pale),#fde8b0);border:1.5px solid var(--gold-light);color:var(--gold);font-size:.68rem;letter-spacing:.25em;padding:5px 18px;border-radius:20px;margin-bottom:16px;}
+.featured-card{position:relative;background:rgba(255,255,255,.95);border:2px solid var(--gold-light);border-radius:24px;padding:40px 36px 32px;margin-bottom:20px;box-shadow:0 8px 32px rgba(200,160,96,.12);transition:transform .3s,box-shadow .3s;overflow:hidden;}
+.featured-card-title{font-family:'Zen Old Mincho',serif;font-size:clamp(1.1rem,3vw,1.4rem);font-weight:700;color:var(--text);letter-spacing:.06em;margin-bottom:14px;}
+.featured-card-desc{font-size:.84rem;line-height:2.3;color:var(--text-light);margin-bottom:20px;text-align:left;}
 
 /* ── CTA ── */
 .cta-section{padding:90px 24px;text-align:center;background:var(--white);position:relative;overflow:hidden;}
 .cta-buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:38px;}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 34px;border-radius:50px;font-family:'Noto Serif JP',serif;font-size:.82rem;letter-spacing:.1em;text-decoration:none;transition:all .3s ease;border:none;cursor:pointer;}
 .btn-primary{background:linear-gradient(135deg,#8aaa87,#6a9067);color:white;box-shadow:0 6px 20px rgba(138,170,135,.38);}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(138,170,135,.5);}
 .btn-secondary{background:linear-gradient(135deg,var(--sky),#70a0b0);color:white;box-shadow:0 6px 20px rgba(160,196,208,.4);}
-.btn-secondary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(160,196,208,.5);}
-.btn-outline{background:transparent;color:var(--text-light);border:1px solid var(--beige);}
-.btn-outline:hover{background:var(--cream);transform:translateY(-2px);}
 
 /* ── FOOTER ── */
 footer{padding:50px 24px;background:linear-gradient(160deg,#e4efe2,#e2eef5);text-align:center;position:relative;overflow:hidden;}
 footer .logo{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:300;letter-spacing:.22em;color:var(--text);margin-bottom:4px;}
-footer .logo-jp{font-size:.72rem;color:var(--text-light);letter-spacing:.32em;margin-bottom:18px;}
-footer p{font-size:.7rem;color:var(--text-light);line-height:2;}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes scrollLine{0%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1;transform:scaleY(1)}100%{opacity:0}}
-@keyframes birdFloat{0%,100%{transform:translateY(0) rotate(0deg)}30%{transform:translateY(-6px) rotate(1.2deg)}70%{transform:translateY(-4px) rotate(-.5deg)}}
-@keyframes birdFloat2{0%,100%{transform:translateY(0) rotate(0deg)}30%{transform:translateY(-5px) rotate(-.8deg)}70%{transform:translateY(-3px) rotate(.6deg)}}
-@keyframes rainDrop{0%,100%{opacity:.5;transform:translateY(0)}50%{opacity:.9;transform:translateY(4px)}}
-
-.bird-a{animation:birdFloat 5s ease-in-out infinite;}
-.bird-b{animation:birdFloat2 5s 1s ease-in-out infinite;}
-.rd{animation:rainDrop 2.2s ease-in-out infinite;}
-.rd:nth-child(2){animation-delay:.5s;}
-.rd:nth-child(3){animation-delay:1s;}
-.rd:nth-child(4){animation-delay:1.5s;}
-
 .fade-in-up{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
 .fade-in-up.visible{opacity:1;transform:translateY(0);}
 
 @media(max-width:560px){
   .concept-bubble{width:128px;height:128px;font-size:.72rem;}
-  .menu-card{padding:22px 18px 20px 26px;}
   .cta-buttons{flex-direction:column;align-items:center;}
   .btn{width:100%;justify-content:center;max-width:290px;}
-  .featured-card{padding:32px 22px 26px;}
-  .event-lead{padding:22px 20px;}
-  .event-table th,.event-table td{padding:11px 14px;}
 }
 </style>
 </head>
 <body>
 
-<!-- ══ HERO ══ -->
 <section class="hero">
-  <svg class="hero-wc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice">
-    <ellipse cx="60" cy="100" rx="200" ry="160" fill="rgba(155,205,222,.28)" transform="rotate(-12,60,100)"/>
-    <ellipse cx="730" cy="720" rx="210" ry="170" fill="rgba(155,205,222,.24)" transform="rotate(18,730,720)"/>
-    <ellipse cx="700" cy="60" rx="140" ry="115" fill="rgba(155,205,222,.18)" transform="rotate(8,700,60)"/>
-    <ellipse cx="90" cy="800" rx="170" ry="130" fill="rgba(205,228,160,.26)" transform="rotate(-8,90,800)"/>
-    <ellipse cx="740" cy="850" rx="150" ry="115" fill="rgba(205,228,160,.22)" transform="rotate(12,740,850)"/>
-    <!-- LINE-style leaf top right -->
-    <g opacity=".12" transform="translate(640,0)">
-      <path d="M80,0 C80,0 145,62 130,148 C115,234 28,250 28,250 C28,250 10,160 46,98 C62,48 80,0 80,0Z" fill="#9aad97"/>
-      <line x1="80" y1="12" x2="62" y2="224" stroke="#7a9877" stroke-width="1.8" opacity=".6"/>
-      <line x1="74" y1="62" x2="42" y2="104" stroke="#7a9877" stroke-width="1.4" opacity=".5"/>
-      <line x1="70" y1="104" x2="36" y2="148" stroke="#7a9877" stroke-width="1.4" opacity=".5"/>
-      <line x1="68" y1="146" x2="38" y2="190" stroke="#7a9877" stroke-width="1.4" opacity=".5"/>
-    </g>
-    <!-- Leaf bottom left -->
-    <g opacity=".1" transform="translate(-20,640) rotate(168)">
-      <path d="M80,0 C80,0 145,62 130,148 C115,234 28,250 28,250 C28,250 10,160 46,98 C62,48 80,0 80,0Z" fill="#b8cdd4"/>
-      <line x1="80" y1="12" x2="62" y2="224" stroke="#90aab8" stroke-width="1.8" opacity=".6"/>
-      <line x1="74" y1="62" x2="42" y2="104" stroke="#90aab8" stroke-width="1.4" opacity=".5"/>
-      <line x1="70" y1="104" x2="36" y2="148" stroke="#90aab8" stroke-width="1.4" opacity=".5"/>
-    </g>
-    <!-- Sprouts -->
-    <g stroke="rgba(100,148,78,.45)" stroke-width="1.3" fill="none" stroke-linecap="round">
-      <path d="M185,200 Q182,190 186,183 Q190,175 192,183"/><path d="M192,183 Q196,174 194,167"/>
-      <path d="M235,270 Q232,260 236,253 Q240,245 242,253"/>
-      <path d="M598,648 Q595,638 599,631 Q603,623 605,631"/>
-      <path d="M642,718 Q639,708 643,701 Q647,693 649,701"/>
-    </g>
-    <!-- Rain drops -->
-    <g fill="rgba(128,188,212,.5)">
-      <ellipse cx="625" cy="395" rx="4" ry="7.5" class="rd"/>
-      <ellipse cx="644" cy="425" rx="3.5" ry="6.5" class="rd"/>
-      <ellipse cx="660" cy="458" rx="4" ry="7" class="rd"/>
-      <ellipse cx="630" cy="490" rx="3.2" ry="6" class="rd"/>
-    </g>
-  </svg>
-
   <div class="hero-content">
     <p class="hero-tag">ヒーリング ＆ リラクゼーションサロン</p>
     <h1 class="hero-logo">YUTORIGI</h1>
     <p class="hero-logo-jp">〜 遊 鳥 木 〜</p>
-
-    <!-- Centered bird illustration -->
-    <div class="bird-scene-wrap">
-      <svg viewBox="0 0 420 210" xmlns="http://www.w3.org/2000/svg">
-        <!-- Soft wash -->
-        <ellipse cx="210" cy="165" rx="200" ry="52" fill="rgba(190,220,235,.2)"/>
-
-        <!-- Branch with decorative curls -->
-        <g stroke="#6a5848" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5,162 Q70,152 135,156 Q200,160 265,154 Q320,148 415,152"/>
-          <!-- Left curl -->
-          <path d="M28,158 Q20,146 16,130 Q12,112 22,105 Q32,98 38,112"/>
-          <path d="M22,105 Q16,94 20,84 Q24,74 28,80" stroke-width="2"/>
-          <path d="M20,84 Q14,76 18,68 Q24,62 28,70" fill="rgba(120,155,100,.35)" stroke="rgba(100,135,80,.6)" stroke-width="1.5"/>
-          <!-- Right curl -->
-          <path d="M330,150 Q338,136 344,120 Q350,104 340,96 Q330,88 324,102"/>
-          <path d="M340,96 Q346,84 344,74" stroke-width="2"/>
-          <!-- Flowers -->
-          <circle cx="280" cy="152" r="4.5" fill="rgba(215,180,200,.65)" stroke="rgba(165,120,145,.55)" stroke-width="1.3"/>
-          <circle cx="298" cy="156" r="4" fill="rgba(215,180,200,.65)" stroke="rgba(165,120,145,.55)" stroke-width="1.2"/>
-          <circle cx="313" cy="149" r="4.5" fill="rgba(215,180,200,.65)" stroke="rgba(165,120,145,.55)" stroke-width="1.3"/>
-          <!-- Mid curl -->
-          <path d="M215,156 Q220,140 225,128 Q230,116 238,118 Q246,120 240,132"/>
-          <circle cx="236" cy="114" r="4" fill="rgba(215,180,200,.6)" stroke="rgba(165,120,145,.5)" stroke-width="1.2"/>
-          <!-- Left center swirl -->
-          <path d="M80,156 Q88,144 92,132 Q96,120 90,116 Q84,112 80,122"/>
-        </g>
-
-        <!-- Bird 1 (left, smaller with crown) -->
-        <g class="bird-a" transform="translate(110,114)">
-          <path d="M-18,4 Q-28,10 -26,17 Q-20,10 -18,15 Q-14,8 -18,4Z" fill="#4a6e88" opacity=".82"/>
-          <ellipse cx="0" cy="0" rx="16" ry="11" fill="#5a7e98" opacity=".85"/>
-          <circle cx="13" cy="-8" r="10" fill="#5a7e98" opacity=".85"/>
-          <path d="M13,-18 Q15,-25 17,-20 Q15,-16 13,-18Z" fill="#7a9eb8" opacity=".75"/>
-          <path d="M11,-17 Q9,-24 11,-20 Q12,-17 11,-17Z" fill="#7a9eb8" opacity=".7"/>
-          <path d="M-10,0 Q-4,9 8,7 Q4,2 -4,-4Z" fill="#3a5e78" opacity=".72"/>
-          <path d="M-6,2 Q0,8 8,6" stroke="rgba(190,218,232,.45)" stroke-width="1.8" fill="none"/>
-          <path d="M22,-8 L28,-6 L22,-5Z" fill="#c8a860" opacity=".9"/>
-          <circle cx="16" cy="-9" r="2.5" fill="white"/>
-          <circle cx="16.5" cy="-9" r="1.5" fill="#1e2e3e"/>
-          <circle cx="17" cy="-9.5" r=".6" fill="white"/>
-          <g stroke="#8a7060" stroke-width="1.3" fill="none" stroke-linecap="round">
-            <line x1="-2" y1="11" x2="-4" y2="20"/><line x1="-4" y1="20" x2="-9" y2="25"/>
-            <line x1="-4" y1="20" x2="-2" y2="26"/><line x1="-4" y1="20" x2="2" y2="25"/>
-            <line x1="8" y1="11" x2="6" y2="20"/><line x1="6" y1="20" x2="1" y2="25"/>
-            <line x1="6" y1="20" x2="8" y2="26"/><line x1="6" y1="20" x2="12" y2="25"/>
-          </g>
-        </g>
-
-        <!-- Bird 2 (right, larger, holding branch) -->
-        <g class="bird-b" transform="translate(228,108)">
-          <path d="M-22,4 Q-34,11 -32,19 Q-24,11 -22,17 Q-18,9 -22,4Z" fill="#3e6478" opacity=".85"/>
-          <ellipse cx="0" cy="0" rx="21" ry="15" fill="#4e7490" opacity=".88"/>
-          <circle cx="18" cy="-11" r="14" fill="#4e7490" opacity=".88"/>
-          <path d="M-14,-2 Q-6,10 10,8 Q6,1 -4,-6Z" fill="#3a5e78" opacity=".75"/>
-          <path d="M-8,1 Q0,9 10,7" stroke="rgba(190,218,232,.45)" stroke-width="2" fill="none"/>
-          <path d="M30,-11 L38,-9 L30,-7Z" fill="#c8a860" opacity=".9"/>
-          <g stroke="rgba(90,135,90,.72)" stroke-width="1.5" fill="none" stroke-linecap="round">
-            <path d="M38,-9 Q48,-16 56,-13"/>
-            <path d="M44,-13 Q42,-20 46,-18"/>
-            <path d="M50,-11 Q50,-18 54,-16"/>
-          </g>
-          <circle cx="45" cy="-20" r="3" fill="rgba(155,200,145,.72)" stroke="rgba(90,145,85,.6)" stroke-width="1"/>
-          <circle cx="54" cy="-17" r="2.5" fill="rgba(155,200,145,.72)" stroke="rgba(90,145,85,.6)" stroke-width="1"/>
-          <circle cx="22" cy="-13" r="3" fill="white"/>
-          <circle cx="22.5" cy="-13" r="1.8" fill="#1e2e3e"/>
-          <circle cx="23" cy="-13.5" r=".7" fill="white"/>
-          <g stroke="#8a7060" stroke-width="1.5" fill="none" stroke-linecap="round">
-            <line x1="-2" y1="15" x2="-4" y2="26"/><line x1="-4" y1="26" x2="-10" y2="32"/>
-            <line x1="-4" y1="26" x2="-2" y2="33"/><line x1="-4" y1="26" x2="4" y2="32"/>
-            <line x1="12" y1="15" x2="10" y2="26"/><line x1="10" y1="26" x2="4" y2="32"/>
-            <line x1="10" y1="26" x2="12" y2="33"/><line x1="10" y1="26" x2="16" y2="32"/>
-          </g>
-        </g>
-
-        <!-- Rain drops -->
-        <g fill="rgba(128,190,215,.55)">
-          <ellipse cx="350" cy="58" rx="4.5" ry="8" class="rd"/>
-          <ellipse cx="368" cy="82" rx="4" ry="7" class="rd"/>
-          <ellipse cx="382" cy="55" rx="3.5" ry="6.5" class="rd"/>
-          <ellipse cx="358" cy="106" rx="3.5" ry="6" class="rd"/>
-        </g>
-        <!-- Sprouts left -->
-        <g stroke="rgba(100,148,78,.5)" stroke-width="1.3" fill="none" stroke-linecap="round">
-          <path d="M48,88 Q45,78 49,70 Q53,62 55,70"/>
-          <path d="M55,70 Q59,60 57,52"/>
-          <path d="M60,88 Q62,78 55,70"/>
-        </g>
-      </svg>
-    </div>
-
     <p class="hero-copy">
       小枝に羽を休める小鳥のように<br>
       心と身体に、ゆとりの時間を<br>
@@ -475,291 +111,44 @@ footer p{font-size:.7rem;color:var(--text-light);line-height:2;}
   <div class="hero-scroll">SCROLL</div>
 </section>
 
-<!-- ══ ZOOM EVENT BANNER ══ -->
 <section style="padding:72px 24px;background:linear-gradient(160deg,#e6f0ee 0%,#e4eff5 100%);text-align:center;position:relative;overflow:hidden;">
-  <svg style="position:absolute;top:-10px;right:-25px;width:200px;opacity:.09;pointer-events:none;transform:rotate(5deg)" viewBox="0 0 160 250">
-    <path d="M80,0 C80,0 145,62 128,155 C111,248 22,260 22,260 C22,260 4,158 46,96 C62,46 80,0 80,0Z" fill="#9aad97"/>
-    <line x1="80" y1="14" x2="60" y2="235" stroke="#7a9877" stroke-width="2" opacity=".6"/>
-    <line x1="74" y1="60" x2="40" y2="100" stroke="#7a9877" stroke-width="1.5" opacity=".5"/>
-  </svg>
-
   <div class="fade-in-up" style="max-width:560px;margin:0 auto;background:rgba(255,255,255,.82);border-radius:24px;padding:40px 32px;border:1px solid var(--sky-light);box-shadow:0 4px 20px rgba(160,196,208,.15);">
     <div style="display:inline-block;background:linear-gradient(135deg,var(--sky-pale),var(--sage-pale));border:1.5px solid var(--sky-light);color:var(--sky);font-size:.66rem;letter-spacing:.25em;padding:4px 16px;border-radius:16px;margin-bottom:18px;">💻 Zoom オンライン開催</div>
     <h2 style="font-family:'Zen Old Mincho',serif;font-size:clamp(1.1rem,3.5vw,1.4rem);font-weight:700;line-height:1.7;color:var(--text);margin-bottom:10px;">スピリチュアルカウンセリング<br>お試し無料体験会</h2>
     <p style="font-size:.8rem;color:var(--text-light);line-height:2.2;margin-bottom:24px;">
-      「スピリチュアルって難しそう…」そんな軽い気持ちで大丈夫。<br>
       タロット・数秘術・マインドブロックを気軽に体験できます😊<br>
       <strong style="color:var(--sage);">初めての方は無料 🎁</strong>
     </p>
-    <a href="https://welcometoyutorigi-dotcom.github.io/YUTORIGIzoom/zoom.html" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--sky),#70a0b0);color:white;padding:14px 34px;border-radius:50px;font-family:'Noto Serif JP',serif;font-size:.82rem;letter-spacing:.1em;text-decoration:none;box-shadow:0 6px 18px rgba(160,196,208,.4);transition:all .3s;">
+    <a href="https://welcometoyutorigi-dotcom.github.io/YUTORIGIzoom/" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--sky),#70a0b0);color:white;padding:14px 34px;border-radius:50px;font-family:'Noto Serif JP',serif;font-size:.82rem;letter-spacing:.1em;text-decoration:none;box-shadow:0 6px 18px rgba(160,196,208,.4);transition:all .3s;">
       💻 Zoomイベントの詳細・申し込みはこちら
     </a>
   </div>
 </section>
 
-<!-- ══ CONCEPT ══ -->
 <section class="concept">
-  <svg class="leaf-deco" style="top:-10px;right:-35px;width:250px;opacity:.09;transform:rotate(5deg)" viewBox="0 0 160 250">
-    <path d="M80,0 C80,0 145,62 128,155 C111,248 22,260 22,260 C22,260 4,158 46,96 C62,46 80,0 80,0Z" fill="#9aad97"/>
-    <line x1="80" y1="14" x2="60" y2="235" stroke="#7a9877" stroke-width="2" opacity=".6"/>
-    <line x1="74" y1="60" x2="40" y2="100" stroke="#7a9877" stroke-width="1.5" opacity=".5"/>
-    <line x1="70" y1="105" x2="34" y2="152" stroke="#7a9877" stroke-width="1.5" opacity=".5"/>
-    <line x1="67" y1="155" x2="34" y2="202" stroke="#7a9877" stroke-width="1.5" opacity=".5"/>
-  </svg>
-  <svg class="leaf-deco" style="bottom:-20px;left:-25px;width:210px;opacity:.08;transform:rotate(172deg)" viewBox="0 0 160 250">
-    <path d="M80,0 C80,0 145,62 128,155 C111,248 22,260 22,260 C22,260 4,158 46,96 C62,46 80,0 80,0Z" fill="#b0c8d4"/>
-    <line x1="80" y1="14" x2="60" y2="235" stroke="#8aaab8" stroke-width="2" opacity=".6"/>
-    <line x1="74" y1="60" x2="40" y2="100" stroke="#8aaab8" stroke-width="1.5" opacity=".5"/>
-    <line x1="70" y1="105" x2="34" y2="152" stroke="#8aaab8" stroke-width="1.5" opacity=".5"/>
-  </svg>
-
   <p class="section-label">Concept</p>
   <h2 class="section-title">心と身体は、繋がっている</h2>
   <div class="section-line"></div>
-
   <div class="concept-poem fade-in-up">
     心と身体にゆとりを<br>
-    立ち止まることが必要なタイミングもある<br>
-    そんな時に羽を休める場所として<br>
-    心地よい空間を<br><br>
-    あなたに寄り添って<br>
-    次に進めるサポートを<br><br>
-    ブロックを外して幸せになりたい方<br>
-    自分らしく輝く道を一緒に見つけましょう
-  </div>
-
-  <div class="concept-icons fade-in-up">
-    <div class="concept-bubble"><span class="bicon">🌿</span>身体から<br>アプローチ</div>
-    <div class="concept-bubble"><span class="bicon">🔮</span>心から<br>アプローチ</div>
-    <div class="concept-bubble"><span class="bicon">🦋</span>ブロックを<br>解放する</div>
-    <div class="concept-bubble"><span class="bicon">✨</span>あなたが<br>輝く道へ</div>
+    立ち止まることが必要なタイミングもある
   </div>
 </section>
 
-<!-- ══ FEATURED MENU ══ -->
-<section class="featured-section">
-  <svg class="leaf-deco" style="top:20px;left:-20px;width:200px;opacity:.07;transform:rotate(-10deg)" viewBox="0 0 160 250">
-    <path d="M80,0 C80,0 145,62 128,155 C111,248 22,260 22,260 C22,260 4,158 46,96 C62,46 80,0 80,0Z" fill="#c8a060"/>
-  </svg>
-
-  <div class="featured-badge">⭐ RECOMMENDED MENU</div>
-  <p class="section-label">Featured</p>
-  <h2 class="section-title">特におすすめのメニュー</h2>
-  <div class="section-line"></div>
-  <p style="font-size:.8rem;color:var(--text-light);margin-top:20px;line-height:2.2;">
-    現実をしっかり動かしていくために<br>
-    タロット×マインドブロック解放で、あなたの可能性を開きます
-  </p>
-
-  <div class="featured-inner" style="margin-top:44px">
-
-    <div class="featured-card fade-in-up">
-      <div class="ribbon">人気No.1</div>
-      <div class="featured-card-title">🃏 タロット＆オラクルリーディング</div>
-      <p class="featured-card-desc">
-        何かに悩んでいませんか？答えが見つからずグルグルしていませんか？<br>
-        タロットやオラクルカードであなたの<strong>心の本当の声を引き出し</strong>、対話でさらに癒していきます。<br>
-        ただ答えを出すだけでなく、あなた自身が「なぜそう感じるのか」に気づける時間です。
-      </p>
-      <div class="prices">
-        <div class="featured-price">対面 60分 <strong>¥8,000</strong></div>
-        <div class="featured-price">Zoom 60分 <strong>¥8,000</strong></div>
-      </div>
-    </div>
-
-    <div class="featured-card fade-in-up">
-      <div class="ribbon">おすすめ</div>
-      <div class="featured-card-title">🔓 マインドブロック解放セッション</div>
-      <p class="featured-card-desc">
-        やりたいことが分かっているのに、なぜか動けない…<br>
-        その原因は<strong>潜在意識の中にあるブロック</strong>かもしれません。<br>
-        スピリチュアル×潜在意識×人生コンサルのアプローチで、あなたの現実を根本から動かしていきます。
-      </p>
-      <div class="prices">
-        <div class="featured-price">お試し 60分 <strong>¥6,000</strong></div>
-        <div class="featured-price">3回セッション <strong>¥15,000</strong></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══ ALL MENU ══ -->
-<section class="menu-section">
-  <svg class="leaf-deco" style="top:0;right:-15px;width:180px;opacity:.06" viewBox="0 0 160 250">
-    <path d="M80,0 C80,0 145,62 128,155 C111,248 22,260 22,260 C22,260 4,158 46,96 C62,46 80,0 80,0Z" fill="#9aad97"/>
-  </svg>
-  <div class="menu-inner">
-    <p class="section-label" style="text-align:center">All Menu</p>
-    <h2 class="section-title" style="text-align:center">全メニュー・料金</h2>
-    <div class="section-line"></div>
-
-    <!-- FRONT -->
-    <div class="menu-divider"><span>🌸 体験メニュー</span></div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div>
-          <div class="menu-card-title">新規限定・体験メニュー</div>
-        </div>
-        <span class="menu-tag tag-face">対面のみ</span>
-      </div>
-      <p class="menu-desc">心と身体を両方から癒します。悩んでいるなら、まずは一度試してみませんか？</p>
-      <div class="menu-prices">
-        <div class="price-item">タロット・オラクルカード 20分 <strong>¥2,000</strong></div>
-        <div class="price-item">リンパケアセラピー 20分 <strong>¥2,000</strong></div>
-        <div class="price-item">タロット＆リンパケア 30分 <strong>¥3,000</strong></div>
-      </div>
-    </div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div class="menu-card-title">やちむんぼおる＆リンパケア</div>
-        <span class="menu-tag tag-face">対面のみ</span>
-      </div>
-      <p class="menu-desc">沖縄の伝統やちむんぼおるとリンパケアを組み合わせた、身体を深く癒す特別メニュー。</p>
-      <div class="menu-prices">
-        <div class="price-item">20分 <strong>¥3,000</strong></div>
-        <div class="price-item">40分 <strong>¥5,000</strong></div>
-      </div>
-    </div>
-
-    <!-- MIDDLE -->
-    <div class="menu-divider"><span>🔮 スピリチュアル・カウンセリング</span></div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div>
-          <div class="menu-card-title">タロット＆オラクルリーディング</div>
-        </div>
-        <span class="menu-tag tag-both">対面 ＆ Zoom</span>
-      </div>
-      <p class="menu-desc">タロットやオラクルカードであなたの心の本当の声を引き出し、対話でさらに癒していきます。</p>
-      <div class="menu-prices"><div class="price-item">60分 <strong>¥8,000</strong></div></div>
-    </div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div>
-          <div class="menu-card-title">数秘リーディング</div>
-        </div>
-        <span class="menu-tag tag-both">対面 ＆ Zoom</span>
-      </div>
-      <p class="menu-desc">数のエネルギーを使って自分を深め、人生の転機を知り、秘めた可能性を開花させませんか。</p>
-      <div class="menu-prices"><div class="price-item">60分 <strong>¥8,000</strong></div></div>
-    </div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div>
-          <div class="menu-card-title">マインドブロック解放セッション</div>
-        </div>
-        <span class="menu-tag tag-both">対面 ＆ Zoom</span>
-      </div>
-      <p class="menu-desc">やりたいことが分かっているのに動けない…その原因であるブロックを、潜在意識の中から一緒に探ります。</p>
-      <div class="menu-prices">
-        <div class="price-item">お試し 60分 <strong>¥6,000</strong></div>
-        <div class="price-item">3回セッション 60分×3 <strong>¥15,000</strong></div>
-      </div>
-    </div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div>
-          <div class="menu-card-title">あなたが輝く道を開くセッション</div>
-        </div>
-        <span class="menu-tag tag-both">対面 ＆ Zoom</span>
-      </div>
-      <p class="menu-desc">副業・自分ビジネスで輝く道を開くセッション。スピリチュアルカウンセラー・リンパケアセラピスト・ヒーラーへの道を実体験をもとにサポートします。</p>
-      <div class="menu-prices"><div class="price-item">カウンセリング 60分 <strong>¥6,000</strong></div></div>
-    </div>
-
-    <!-- BACK -->
-    <div class="menu-divider"><span>✨ ヒーリング＆ボディケア</span></div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div>
-          <div class="menu-card-title">ヒーリング＆リンパケア</div>
-        </div>
-        <span class="menu-tag tag-face">対面のみ</span>
-      </div>
-      <p class="menu-desc">心と身体の両方をケアするトリートメント。組み合わせはご自身で選べます。</p>
-      <div class="menu-prices"><div class="price-item">80分 <strong>¥10,000</strong></div></div>
-    </div>
-
-    <div class="menu-card fade-in-up">
-      <div class="menu-card-header">
-        <div class="menu-card-title">リンパケアセラピー</div>
-        <span class="menu-tag tag-face">対面のみ</span>
-      </div>
-      <p class="menu-desc">リンパを流してむくみや慢性疲労を改善。体が引き締まり、軽くなる体験を。</p>
-      <div class="menu-prices">
-        <div class="price-item">全身 80分 <strong>¥10,000</strong></div>
-        <div class="price-item">全身 50分 <strong>¥7,000</strong></div>
-        <div class="price-item">肩・腕・手 20分 <strong>¥2,000</strong></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══ FOR YOU ══ -->
-<section class="feature-section">
-  <p class="section-label">For You</p>
-  <h2 class="section-title">こんな方におすすめ</h2>
-  <div class="section-line"></div>
-  <div class="feature-grid">
-    <div class="feature-item fade-in-up">
-      <span class="feature-icon">🌧️</span>
-      <h3>悩んでいる方</h3>
-      <p>うまくいかない、でも原因が分からない。そんなモヤモヤを一緒に解きほぐします。</p>
-    </div>
-    <div class="feature-item fade-in-up">
-      <span class="feature-icon">🌿</span>
-      <h3>心と身体を整えたい</h3>
-      <p>疲れた心と身体にゆとりを。どちらからでもアプローチできます。</p>
-    </div>
-    <div class="feature-item fade-in-up">
-      <span class="feature-icon">🌟</span>
-      <h3>自分らしく輝きたい</h3>
-      <p>スピリチュアルや自分ビジネスで新しい道を歩みたい方のサポートをします。</p>
-    </div>
-    <div class="feature-item fade-in-up">
-      <span class="feature-icon">💻</span>
-      <h3>遠方・忙しい方も</h3>
-      <p>スピリチュアル系メニューはZoomで対応。全国どこからでも。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══ CTA ══ -->
 <section class="cta-section">
   <p class="section-label">Reservation</p>
   <h2 class="section-title">ご予約・お問い合わせ</h2>
   <div class="section-line"></div>
-  <p style="font-size:.83rem;color:var(--text-light);line-height:2.4;margin-top:22px;">
-    ご予約・お問い合わせは公式LINEからどうぞ<br>初めての方もお気軽にメッセージください
-  </p>
   <div class="cta-buttons">
-    <a href="https://welcometoyutorigi-dotcom.github.io/YUTORIGIzoom/zoom.html" class="btn btn-secondary">🎁 Zoomイベントを見る</a>
+    <a href="https://welcometoyutorigi-dotcom.github.io/YUTORIGIzoom/" class="btn btn-secondary">🎁 Zoomイベントを見る</a>
     <a href="https://script.google.com/macros/s/AKfycbw3vJ1P3L4qK_00YkfbSFE2VvxEtMLau7VOl60FaF3ats8khL6auuqXd4RYWqxkq5iRqA/exec" class="btn btn-primary">📅 対面予約はこちら</a>
-    <a href="https://script.google.com/macros/s/AKfycbza0txFB1H_sp-tMzrFGI6QR1ln5CsHq3HM75wdY4P-4-kDmmHrURZ1_xyC9MGjxYzz/exec" class="btn btn-outline">💻 Zoom予約はこちら</a>
   </div>
-  <p style="font-size:.7rem;color:var(--text-light);margin-top:28px;line-height:2;">
-    ご予約・お問い合わせは公式LINEより承ります
-  </p>
 </section>
 
-<!-- ══ FOOTER ══ -->
 <footer>
-  <svg class="leaf-deco" style="top:-5px;left:-15px;width:150px;opacity:.12" viewBox="0 0 160 250">
-    <path d="M80,0 C80,0 145,62 128,155 C111,248 22,260 22,260 C22,260 4,158 46,96 C62,46 80,0 80,0Z" fill="#9aad97"/>
-  </svg>
   <p class="logo">YUTORIGI</p>
   <p class="logo-jp">〜 遊 鳥 木 〜</p>
-  <p>ヒーリング ＆ リラクゼーションサロン</p>
-  <p style="margin-top:18px;font-size:.64rem;opacity:.55;">© YUTORIGI All Rights Reserved.</p>
+  <p>© YUTORIGI All Rights Reserved.</p>
 </footer>
 
 <script>
